@@ -23,6 +23,7 @@ const PORT = process.env.PORT || 4000;
 app.use(
   cors({
     origin: [
+      process.env.CLIENT_URL || "http://localhost:8080",
       "https://prop-cid-frontend-git-main-vijay-mauryas-projects.vercel.app",
       "https://propcid.com",
       "https://prop-cid-frontend.vercel.app"
